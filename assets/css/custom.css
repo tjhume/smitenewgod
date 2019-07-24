@@ -1,0 +1,389 @@
+/* === General === */
+
+body{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 16px;
+	color: white;
+	background-color: #1A1A1A;
+	min-height: 100vh;
+	position: relative;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+/* === Global === */
+
+.navbar{
+	background-color: #1A1A1A;
+}
+
+#active{
+	color: gold !important;
+}
+
+#logo{
+	height: 30px;
+}
+/* === TOGGLER ANIMATION === */
+
+.icon-bar {
+	width: 28px; 
+	height: 2px;
+	background-color: gold;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 6px;
+}
+
+.bottom-bar{
+	margin-bottom: 5px;
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+  transform: translate(5px) rotate(47deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: translate(5px) rotate(-47deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+
+/* === Home === */
+
+.img-section{
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+
+h1{
+	color: white;
+}
+
+.left h1{
+	text-align: left;
+	margin-left: 200px;
+	padding-top: 190px;
+}
+
+.right h1{
+	text-align: right;
+	margin-right: 200px;
+	padding-top: 190px;
+}
+
+.left-box, .right-box{
+	color: white;
+	margin-top: 20px;
+	background-color: #1A1A1A;
+	padding: 15px;
+	width: 300px;
+	border: solid 1px gold;
+}
+
+.img-section span{
+	font-size: 1.2em;
+	color: gold;
+}
+
+.button{
+	background-color: #EAC300;
+	color: #333333;
+	font-size: 1.1em;
+	width: 95px;
+	text-align: center;
+	padding: 4px;
+	position: relative;
+	transition: background-color 0.5s;
+}
+
+.button:hover{
+	background-color: #CCA600;
+}
+
+.button a{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+.left-box{
+	margin-left: 200px;
+}
+
+.right-box{
+	float: right;
+	margin-right: 200px;
+}
+
+#latest-release{
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/olorun.jpg');
+	background-size: cover;
+}
+
+#upcoming{
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/shrug.jpg');
+}
+
+#data-mining{
+	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/persephone.jpg');
+}
+
+/* === Layout/Other Pages === */
+
+.content h2{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h2 span{
+	color: gold;
+}
+
+.feature-image{
+	height: 500px;
+	width: 100%;
+	margin-bottom: 60px;
+	text-shadow: 0 0 1px black;
+}
+
+#newest-feature{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/olorun.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#next-feature{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/persephone.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.feature-title{
+	padding-top: 200px;
+	text-align: center;
+}
+
+.feature-title span{
+	color: gold;
+}
+
+.god-content{
+	width: 900px;
+	margin: auto;
+	text-align: left;
+	padding-bottom: 40px;
+}
+
+.god-content span{
+	color: gold;
+}
+
+.god-content p{
+	margin-bottom: 10px;
+}
+
+.god-content a{
+	color: cyan !important;
+}
+
+.divider{
+	width: 250px;
+	height: 2px;
+	background: white;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.reveal{
+	display: table;
+	margin: auto;
+	margin-top: 16px;
+	width: 800px;
+	height: 450px;
+}
+
+#other-news{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+}
+
+/* === CONTACT === */
+#contact{
+	color: white;
+}
+
+#contact form button{
+	color: black;
+	width: 170px;
+}
+
+#cbutton-container{
+	width: 170px;
+	margin: auto;
+}
+
+#contact h2{
+	text-align:center;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+/* === FOOTER === */
+
+.footer{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	color: #C6C6C6;
+	background-color: #111111;
+	width: 100%;
+	height: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 40px;
+}
+
+.footer a{
+	transition: color 0.5s;
+}
+
+.footer a:hover{
+	color: gray;
+}
+
+/* === MEDIA QUERIES === */
+
+@media only screen and (max-width:910px) {
+	body{
+		font-size: 75%;
+	}
+	
+	.god-content{
+		width: 500px;
+	}
+	
+	.reveal{
+		width: 400px;
+		height: 225px;
+	}
+	
+	.feature-image{
+		background-attachment: scroll !important;
+		height: 300px;
+	}
+	
+	.feature-title{
+		padding-top: 75px;
+	}
+	
+	h1{
+		font-size: 32px !important;
+	}
+	
+	h2{
+		font-size: 26px !important;
+	}
+	
+	h3{
+		font-size: 20px !important;
+	}
+	
+	.img-section{
+		height: 500px;
+	}
+	
+	.left h1, .right h1{
+		padding-top: 100px;
+		margin-left: 0;
+		margin-right: 0;
+		text-align: center;
+	}
+	
+	.left-box, .right-box{
+		float: none;
+		margin: auto;
+		width: 200px;
+	}
+	
+}
+
+@media only screen and (max-width:620px) {
+	#latest-release{
+		background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/olorun-center.jpg');
+		background-position: 50% 0;
+	}
+	
+	#data-mining{
+		background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/persephone-center.jpg');
+		background-position: 50% 0;
+	}
+}
+
+@media only screen and (max-width:520px) {
+	body{
+		font-size: 60%;
+	}
+	
+	.god-content{
+		width: 300px;
+	}
+	
+	.reveal{
+		width: 250px;
+		height: 141px;
+	}
+	
+	.feature-image{
+		height: 200px;
+	}
+	
+	.feature-title{
+		padding-top: 50px;
+	}
+	
+	h1{
+		font-size: 25px !important;
+	}
+	
+	h2{
+		font-size: 19px !important;
+	}
+	
+	h3{
+		font-size: 15px !important;
+	}
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143625995-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-143625995-1', {'anonymize_ip' : true});
+		</script>
+		
+		<!-- AdSense -->
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		  (adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-5064326101185449",
+			enable_page_level_ads: true
+		  });
+		</script>
+		<meta http-equiv= "Content-Type" content =" text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+		<meta name = "description" content = "Latest news on the new Smite God releases and datamining">
+		<meta name = "author" content = "TJ Hume">
+		<link rel = "icon" href = "assets/img/favicon-oval.png">
+		
+		<title>Smite New God | Contact</title>
+		
+		<!-- Bootstrap core CSS -->
+		<link href = "assets/css/bootstrap.min.css" rel = "stylesheet">
+		
+		<!-- FontAwesome Icons -->
+		<link href="assets/css/font-awesome/css/font-awesome.min.css" rel = "stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="assets/css/custom.css" rel = "stylesheet">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+		
+		<!-- HTML 5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		
+		<!--[if lt IE 9]>
+		<script src = "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"</script>
+		<script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>"
+		<![endif]-->
+	</head>
+	
+	<body>
+		<header class = "site-header" role = "banner">
+			
+			<!-- NAVBAR
+			=================================== -->
+			<div class = "navbar-wrapper">
+				
+				<div class="navbar navbar-dark navbar-expand-lg" id = "navbar" role = "navigation">
+				
+					<div class = "container">
+						
+						<div class = "navbar-header">
+							<a class = "navbar-brand" href="https://smitenewgod.com"><img id = "logo" src="assets/img/logo.png" alt = "Smite New God Logo"></a>
+						</div><!-- navbar-header -->
+						
+						<button type = "button" class = "navbar-toggler navbar-toggler-right collapsed" data-toggle = "collapse" data-target = "#nb-collapse">
+								<span class = "sr-only">Toggle navigation</span>
+								<span class="icon-bar top-bar"></span>
+								<span class="icon-bar middle-bar"></span>
+								<span class="icon-bar bottom-bar"></span>
+						</button><!-- navbar toggler -->
+						
+						<div class = "collapse navbar-collapse" id = "nb-collapse">
+							<ul class = "navbar-nav mx-auto">
+								<li class = "nav-item text-nowrap"><a class = "nav-link" href = "http://smitenewgod.com">Home</a></li>
+								<li class = "nav-item text-nowrap"><a class = "nav-link" href = "new-god">New God</a></li>
+								<li class = "nav-item text-nowrap"><a class = "nav-link" href = "next-god">Next God</a></li>
+								<li class = "nav-item text-nowrap"><a class = "nav-link" href = "other-news">Other News/Speculation</a></li>
+								<li class = "nav-item text-nowrap"><a class = "nav-link" id = "active" href = "contact">Contact</a></li>
+							</ul><!-- nav -->
+						</div><!-- navbar collapse -->
+						
+					</div><!-- container -->
+				</div><!-- navbar -->
+				
+			</div><!-- navbar-wrapper -->
+			
+		</header>
+		
+		<!-- CONTACT
+		=================================== -->
+		<section id = "contact">
+			
+			<div class = "container">
+				<div class = "section-header">
+					<h2>Questions or Suggestions? Leave them Here!</h2>
+				</div><!-- section-header -->
+				
+				
+				<div class = "row">
+					<div class = "col-sm-8 col-sm-offset-2 mx-auto">
+						
+						<div id = "error"></div>
+						
+						<form action="https://formspree.io/ng@smitenewgod.com" method="POST" />
+							<div class = "form-group">
+								<label for = "contact-name">Your First Name</label>
+								<input type= "text" name = "name" class = "form-control mr-2" id = "contact-name" placeholder = "John">
+							</div><!-- form-group-->
+							<div class="form-group">
+								<label for="contact-email">Your Email Address</label>
+								<input type="email" name = "email" class="form-control" id="contact-email" placeholder="name@example.com">
+							</div><!-- form-group -->
+							
+							<div class="form-group">
+								<label for="contact-task">Your Message</label>
+								<textarea name = "task" class="form-control" id="contact-task" rows="6"></textarea>
+							</div>
+							 
+							<div id = "cbutton-container"><button type="submit" name = "submit" class="btn btn-light mb-2 mt-2 text-muted">Submit</button></div>
+							
+						</form><!-- form -->
+						
+					</div><!-- col -->
+				</div><!-- row -->
+				
+			</div>
+			
+		</section>
+		
+		<!-- FOOTER
+		=================================== -->
+		<footer class = "footer">
+			<span style = "float: left">&copy; Smite New God 2019</span>
+			<span style = "float: right"><a href = "privacy-policy">Privacy Policy</a></span>
+		</footer>
+		
+		
+		<!-- JAVASCRIPT
+		=================================== -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				
+				//JS form submission validation
+			$("form").submit(function(e) {
+				
+				  var error = "";
+				  
+				  if ($("#contact-name").val() == "") {
+					  
+					  error += "The name field is required.<br>"
+					  
+				  }
+				  
+				  if ($("#contact-email").val() == "") {
+					  
+					  error += "The email field is required.<br>"
+					  
+				  }
+				  
+				  if ($("#contact-task").val() == "") {
+					  
+					  error += "The content field is required.<br>"
+					  
+				  }
+				  
+				  if (error != "") {
+					  
+					 $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
+					  
+					  return false;
+					  
+				} else {
+					  
+					return true;
+					  
+				}
+			 });
+				
+			});
+		</script>
+		
+	</body>
+	
+</html>
